@@ -1,2 +1,2 @@
 # 3M-NLP-Chatbot
-Conversational AI bot that can be used for general chitchat as well as for getting factual information based on reddit data
+Web application hosted on flask server to provide UI for a user to interact with chatbot
