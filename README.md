@@ -22,7 +22,6 @@ Login to ngrok https://ngrok.com/ and get the authtoken
 You are set for hosting the flask app using ngrok.
 
 * **Data pre-processing** <br />
-
 To create a well structured data for further processing, we firstly take all the raw dataset.
 Chitchat dataset: https://github.com/BYU-PCCL/chitchat-dataset
 Empathetic dataset: https://github.com/facebookresearch/EmpatheticDialogues
