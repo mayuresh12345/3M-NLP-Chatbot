@@ -26,8 +26,11 @@ The BERT_classifier_data_pre.ipynb has the code to preprocess all three datasets
 Sentiment_NER_GPT2.ipynb performs some basic data cleaning and contains the code to import the pretrained GPT-2 model, perform NER and Sentiment analysis on the query, refine the query for fine-tuning of the GPT-2 model. The combined dataset is divided into batches of 64, split for getting train and test data and further training the model with custom dataset. We get the fine-tuned GPT-2 model.
 
 * **Flask App** <br />
-3m-NLP_flask_app.ipynb is the main file that integrates the three models and runs the flask app. It loads the fine-tuned GPT-2 model, BERT classifier model and has the RoBERTa pipeline for question answering. Once we run the app we get the interface for our chatbot. The entered query follows the pipeline by refining it and passing it to the loaded GPT-2 model. We get the context using cosine similarity function and append the GPT-2 reply to it. The query and context is passed through the RoBERTa pipeline to get the final reply.
+3M-NLP_flask_app.ipynb is the main file that integrates the three models and runs the flask app. It loads the fine-tuned GPT-2 model, BERT classifier model and has the RoBERTa pipeline for question answering. Once we run the app we get the interface for our chatbot. The entered query follows the pipeline by refining it and passing it to the loaded GPT-2 model. We get the context using cosine similarity function and append the GPT-2 reply to it. The query and context is passed through the RoBERTa pipeline to get the final reply.
 
+* **Run** <br />
+After getting all the models trained, the 3M-NLP_flask_app.ipynb file contains the main function that runs the app and passes the user query through the complete pipeline and returns the reply to the user.
+  
 * **Evaluation** <br />
 The code for evaluation methods (BLEU & BERT) can be found in Sentiment_NER_GPT2.ipynb.
 
