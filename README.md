@@ -2,7 +2,7 @@
 
 * **Project Title**: Topic-Based Empathic Chatbot
 * **Description**:  The 3M-NLP Chatbot is an AI-based conversational agent capable of engaging in general talk while also offering factual information on Reddit topics encompassing healthcare, education, environment, politics, and technology. It uses advanced natural language processing techniques, notably Named Entity Recognition, Sentiment Analysis, and we fine-tune the pre-trained models to comprehend user queries and generate appropriate responses.
-* **Getting Started**: 
+* **Getting Started**: <br />
 
 !pip install transformers <br />
 !pip install tensorflow_text <br />
@@ -21,7 +21,7 @@ Login to ngrok https://ngrok.com/ and get the authtoken
 
 You are set for hosting the flask app using ngrok.
 
-* **Data pre-processing**
+* **Data pre-processing** <br />
 
 To create a well structured data for further processing, we firstly take all the raw dataset.
 Chitchat dataset: https://github.com/BYU-PCCL/chitchat-dataset
@@ -35,7 +35,7 @@ Sentiment_NER_GPT2.ipynb performs some basic data cleaning and contains the code
 * **Flask App** <br />
 3m-NLP_flask_app.ipynb is the main file that integrates the three models and runs the flask app. It loads the fine-tuned GPT-2 model, BERT classifier model and has the RoBERTa pipeline for question answering. Once we run the app we get the interface for our chatbot. The entered query follows the pipeline by refining it and passing it to the loaded GPT-2 model. We get the context using cosine similarity function and append the GPT-2 reply to it. The query and context is passed through the RoBERTa pipeline to get the final reply.
 
-* **Evaluation**
+* **Evaluation** <br />
 The code for evaluation methods (BLEU & BERT) can be found in Sentiment_NER_GPT2.ipynb.
 
 
