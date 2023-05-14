@@ -33,7 +33,11 @@ After getting all the models trained, the 3M-NLP_flask_app.ipynb file contains t
   
 * **Evaluation** <br />
 The code for evaluation methods (BLEU & BERT) can be found in Sentiment_NER_GPT2.ipynb.
-
+  
+* **Team Members** <br />
+Mayuresh Wagh
+Yash Joshi
+Shraddha Shekhar
 
 
 
