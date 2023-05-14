@@ -3,7 +3,6 @@
 * **Project Title**: Topic-Based Empathic Chatbot
 * **Description**:  The 3M-NLP Chatbot is an AI-based conversational agent capable of engaging in general talk while also offering factual information on Reddit topics encompassing healthcare, education, environment, politics, and technology. It uses advanced natural language processing techniques, notably Named Entity Recognition, Sentiment Analysis, and we fine-tune the pre-trained models to comprehend user queries and generate appropriate responses.
 * **Getting Started**: <br />
-
 !pip install transformers <br />
 !pip install tensorflow_text <br />
 !pip install sentence_transformers <br />
@@ -12,13 +11,10 @@
 !pip install better_profanity <br />
 !pip install flask_cors <br />
 !pip install flask_ngrok <br />
-!pip install pyngrok==4.1.1 <br />
-
-Next step is to get the authtoken from ngrok.
-Login to ngrok https://ngrok.com/ and get the authtoken
-
-!ngrok authtoken <authtoken>
-
+!pip install pyngrok==4.1.1 <br /> <br />
+Next step is to get the authtoken from ngrok.<br />
+Login to ngrok https://ngrok.com/ and get the authtoken <br />
+!ngrok authtoken <authtoken> <br /> <br />
 You are set for hosting the flask app using ngrok.
 
 * **Data pre-processing** <br />
