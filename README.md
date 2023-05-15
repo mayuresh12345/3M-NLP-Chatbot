@@ -19,9 +19,9 @@ You are set for hosting the flask app using ngrok.
 
 * **Data pre-processing** <br />
 To create a well structured data for further processing, we firstly take all the raw dataset.
-Chitchat dataset: https://github.com/BYU-PCCL/chitchat-dataset
-Empathetic dataset: https://github.com/facebookresearch/EmpatheticDialogues
-Reddit dataset: We extract the submissions and comments from reddit using the psaw API. The reddit_data_extraction.ipynb has the code for extracting topic based submissions and respective comments. <br />
+- Chitchat dataset: https://github.com/BYU-PCCL/chitchat-dataset
+- Empathetic dataset: https://github.com/facebookresearch/EmpatheticDialogues
+- Reddit dataset: We extract the submissions and comments from reddit using the psaw API. The reddit_data_extraction.ipynb has the code for extracting topic based submissions and respective comments. <br />
 The BERT_classifier_data_pre.ipynb has the code to preprocess all three datasets into a query-reply format. The Data_combining.ipynb combines the required fields from each dataset and agglomerates it into a single dataset. It has the training of a BERT classifier that determines which type of reply (chitchat vs reddit) is expected from the chatbot. We get the classifier model. <br />
 Sentiment_NER_GPT2.ipynb performs some basic data cleaning and contains the code to import the pretrained GPT-2 model, perform NER and Sentiment analysis on the query, refine the query for fine-tuning of the GPT-2 model. The combined dataset is divided into batches of 64, split for getting train and test data and further training the model with custom dataset. We get the fine-tuned GPT-2 model.
 
